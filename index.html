@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cam's Barbershop</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+background:linear-gradient(135deg,#000,#222);
+text-align:center;
+padding:50px 20px;
+border-bottom:4px solid gold;
+}
+
+h1{
+color:gold;
+font-size:3rem;
+}
+
+.subtitle{
+font-size:1.2rem;
+margin-top:10px;
+}
+
+nav{
+background:black;
+padding:15px;
+text-align:center;
+border-bottom:2px solid gold;
+}
+
+.nav-btn{
+background:gold;
+color:black;
+padding:12px 24px;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+}
+
+.hero{
+text-align:center;
+padding:50px 20px;
+}
+
+.hero h2{
+color:gold;
+margin-bottom:15px;
+}
+
+.barber-pole{
+width:60px;
+height:180px;
+margin:20px auto;
+border-radius:30px;
+border:4px solid white;
+background:repeating-linear-gradient(
+-45deg,
+red 0px,
+red 20px,
+white 20px,
+white 40px,
+blue 40px,
+blue 60px
+);
+animation:spin 4s linear infinite;
+}
+
+@keyframes spin{
+from{background-position:0 0;}
+to{background-position:0 200px;}
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+.card{
+background:#1d1d1d;
+padding:25px;
+border-radius:15px;
+border:2px solid gold;
+margin-bottom:25px;
+}
+
+h2{
+color:gold;
+margin-bottom:15px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.service{
+background:#222;
+padding:20px;
+border-radius:12px;
+border:1px solid gold;
+text-align:center;
+}
+
+.price{
+font-size:1.4rem;
+color:gold;
+font-weight:bold;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:12px 24px;
+background:gold;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:25px;
+border-top:2px solid gold;
+margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>💈 Cam's Barbershop 💈</h1>
+<p class="subtitle">Owned & Operated by Cameron Fillian</p>
+</header>
+
+<nav>
+<a href="#booking" class="nav-btn">✂️ Book Your Fresh Cut ✂️</a>
+</nav>
+
+<div class="hero">
+
+<div class="barber-pole"></div>
+
+<h2>Fresh Cuts. Great Service.</h2>
+
+<p>
+An 11-year-old barber working hard and building his dream one haircut at a time.
+</p>
+
+</div>
+
+<section>
+
+<div class="card">
+<h2>About Cameron</h2>
+
+<p>
+Hi! My name is <strong>Cameron Fillian</strong>.
+Welcome to <strong>Cam's Barbershop</strong>!
+
+I run a small barbershop from my room and enjoy learning new barbering skills while giving fresh haircuts and making people look their best.
+</p>
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<div class="card" style="text-align:center;">
+
+<h2>✂️ Ready for a Fresh Cut? ✂️</h2>
+
+<p>
+Looking for a clean haircut? Call or text
+<strong>512-993-1789</strong>
+to schedule your appointment with Cam's Barbershop.
+</p>
+
+<br>
+
+<a href="tel:5129931789" class="btn">
+📞 Call Now
+</a>
+
+<a href="sms:5129931789" class="btn">
+💬 Text to Book
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Services</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>Basic Haircut</h3>
+<p>Clean and fresh haircut.</p>
+<div class="price">$10</div>
+</div>
+
+<div class="service">
+<h3>Fade</h3>
+<p>Smooth fade with detail.</p>
+<div class="price">$15</div>
+</div>
+
+<div class="service">
+<h3>Line Up</h3>
+<p>Sharp edges and clean finish.</p>
+<div class="price">$5</div>
+</div>
+
+<div class="service">
+<h3>Haircut + Line Up</h3>
+<p>Best value package.</p>
+<div class="price">$15</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Why Choose Cam's Barbershop?</h2>
+
+<ul style="padding-left:20px;line-height:2;">
+<li>💈 Friendly Service</li>
+<li>💈 Affordable Prices</li>
+<li>💈 Attention to Detail</li>
+<li>💈 Clean Setup</li>
+<li>💈 Supporting a Young Entrepreneur</li>
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+💈 Cam's Barbershop | Cameron Fillian 💈
+</footer>
+
+</body>
+</html>
